@@ -61,7 +61,7 @@ const StyledWrapper = styled.div`
   }
 
   .flip-card-front {
-    border: 4px solid white;
+
   }
 
   .profile-image {
@@ -88,7 +88,7 @@ const StyledWrapper = styled.div`
   }
 
   .flip-card-back {
-    border: 4px solid rgb(9, 8, 9);
+
     transform: rotateY(180deg);
     padding: 11px;
   }

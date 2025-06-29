@@ -37,7 +37,7 @@ const StyledWrapper = styled.div`
   overflow: hidden;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   transition: all 1s ease-in-out;
-  border: 2px solid rgb(255, 255, 255);
+
 }
 
 
