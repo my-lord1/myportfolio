@@ -1,24 +1,19 @@
-import { Github } from "../icons/github"
-import { Website } from "../icons/website"
-
-export function Subproject(){
-    
-    return (
-  <div class="container mb-2">
-    <div class="box border rounded-xl border-indigo-600 p-6 ">
-      <div className="flex justify-between ">
-        <h3 class="start">Subproject 1</h3>
-        <div class="flex justify-between">
-          <Github/>
-          <Website/>
-        </div>
-      </div>
-      <br/>
-      <div class="flex justify-start">
-        <p>This is a subproject component</p>
+// components/subproject1.jsx
+export function Subproject({ onHover }) {
+  return (
+    <div
+      onMouseEnter={onHover}
+      className="w-[240px] bg-white/20 backdrop-blur-md text-black rounded-lg p-4 hover:scale-105 transition-transform duration-300 shadow-md cursor-pointer"
+    >
+      <h3 className="text-xl font-semibold mb-2">Instant-eats</h3>
+      <p className="text-sm mb-2">
+        Modern food delivery app using Supabase, PostgreSQL, Node.js, React-TSX, TypeScript, etc.
+      </p>
+      <div className="text-sm text-blue-400 space-y-1">
+        <a href="#" target="_blank">Frontend - GitHub ↗</a><br />
+        <a href="#" target="_blank">Backend - API ↗</a><br />
+        <a href="#" target="_blank">Website ↗</a>
       </div>
     </div>
-  </div>
-
-    )
+  );
 }

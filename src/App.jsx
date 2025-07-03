@@ -1,19 +1,28 @@
-import { useState } from 'react'
+import { AnimatePresence } from 'framer-motion';
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { LandingPage } from './pages/landingpage1';
+import { Project } from './pages/project1';
+import './App.css';
 
-import { LandingPage } from './pages/landingpage1'
-
-import './App.css'
-
-function App() {
-
+function AppRoutes() {
+  const location = useLocation();
 
   return (
-<div>
-  <LandingPage />
-
-  </div>
-
-  )
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route index element={<LandingPage />} />
+        <Route path="/projects" element={<Project />} />
+      </Routes>
+    </AnimatePresence>
+  );
 }
 
-export default App
+function App() {
+  return (
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
+  );
+}
+
+export default App;

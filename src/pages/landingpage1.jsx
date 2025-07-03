@@ -4,10 +4,15 @@ import { TopComponent } from '../components/TopComponent';
 import { TestingComponent } from '../components/testingcomponent';
 import { SideComponent1 } from '../components/sidecomponent1';
 import { SideComponent2 } from '../components/sidecomponent2';
+import bgImage from '../icons/bg1.png';
+
+
+
+
 
 export function LandingPage() {
   return (
-    <div className="min-h-screen w-screen bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center">
+    <div style={{ backgroundImage: `url(${bgImage})` }} className="bg-cover bg-center bg-no-repeat min-h-screen w-screen flex items-center justify-center">
       <div className = "flex flex-row gap-2">
         <div>
           <SideComponent1 />
@@ -31,7 +36,9 @@ export function LandingPage() {
         <div>
           <SideComponent2/>
         </div>
+        
       </div>
+  
     </div>
   );
 }

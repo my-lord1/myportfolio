@@ -1,7 +1,17 @@
+import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
+
 export function TestingComponent() {
-    return (
-      <div className="relative w-[407px] h-[200px] bg-white/30 backdrop-blur-sm rounded-[30px] overflow-hidden shadow-[0_7px_29px_0_rgba(100,100,111,0.2)] transition-all duration-1000 ease-in-out">
-        <h1 className="text-black text-center pt-8 text-lg font-">Projects</h1>
-      </div>
-    );
-  }
+  const navigate = useNavigate();
+
+  return (
+    <motion.div
+      layoutId="projects-card"
+      onClick={() => navigate("/projects")}
+      transition={{ duration: 0.6, ease: "easeInOut" }}
+      className="border-2 rounded-[1em] w-[402px] h-[200px] pt-8 bg-white/10 backdrop-blur-sm cursor-pointer flex items-center justify-center text-black text-3xl font-bold"
+    >
+      Projects
+    </motion.div>
+  );
+}
