@@ -40,3 +40,43 @@
 .read-the-docs {
   color: #8e8888;
 }
+
+.animated-border {
+  position: relative;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.animated-border::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  border-radius: inherit;
+  background: conic-gradient(from 0deg, #00ffff, #ff00ff, #00ffff);
+  animation: rotateGradient 3s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+
+  /* Show only the border, not full background */
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  pointer-events: none;
+}
+
+.animated-border:hover::before {
+  opacity: 1;
+}
+
+@keyframes rotateGradient {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg); /* For anti-clockwise, use -360deg */
+  }
+}

@@ -9,9 +9,15 @@ const Bio = () => {
         <div className="flip-card-inner">
           <div className="flip-card-front">
           <div className="profile-image">
-            <p className= "name">
-              just a web developer trying to level my game
-            </p>
+          <pre className="ascii-art">
+{`
+   / \__
+  (    @\___
+  /         O
+ /   (_____/
+/_____/   U
+`}
+              </pre>
           </div>
           </div>
           <div className="flip-card-back">
@@ -50,11 +56,10 @@ const StyledWrapper = styled.div`
     width: 100%;
     height: 100%;
     padding: 5px;
-    border-radius: 1em;
+    border-radius: 2em;
     backface-visibility: hidden;
-    background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
+    background-color: #0D0D0D;
+    
   }
 
   .flip-card-front {
@@ -70,13 +75,13 @@ const StyledWrapper = styled.div`
 
   .pfp {
     border-radius: 35em;
-    fill:rgb(9, 8, 8);
+    fill:#0D0D0D;
   }
 
   .name {
     margin-top: 43px;
     font-size: 20px;
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
     font-weight: bold;
   }
 
@@ -125,6 +130,15 @@ const StyledWrapper = styled.div`
   border-radius: 1em;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
+  .ascii-art {
+    font-family: 'Courier New', monospace;
+    font-size: 20px;
+    color:rgb(255, 255, 255);
+    padding: 10px;
+    padding-left: 20px;
+    line-height: 1.2;
+    text-align: left;
+  }
 `;
 
 

@@ -1,18 +1,21 @@
-// components/subproject1.jsx
-export function Subproject({ onHover }) {
+export function Subproject({ title, description, githubLink, websiteLink, onHover }) {
   return (
     <div
       onMouseEnter={onHover}
-      className="w-[240px] bg-white/20 backdrop-blur-md text-black rounded-lg p-4 hover:scale-105 transition-transform duration-300 shadow-md cursor-pointer"
+      className="w-[240px] h-[400px] bg-black text-white rounded-lg p-4 hover:scale-105 transition-transform duration-300 shadow-md cursor-pointer flex flex-col justify-between"
     >
-      <h3 className="text-xl font-semibold mb-2">Instant-eats</h3>
-      <p className="text-sm mb-2">
-        Modern food delivery app using Supabase, PostgreSQL, Node.js, React-TSX, TypeScript, etc.
-      </p>
-      <div className="text-sm text-blue-400 space-y-1">
-        <a href="#" target="_blank">Frontend - GitHub ↗</a><br />
-        <a href="#" target="_blank">Backend - API ↗</a><br />
-        <a href="#" target="_blank">Website ↗</a>
+      <div>
+        <h3 className="text-xl font-semibold mb-2">{title}</h3>
+        <hr className="mb-1 border-white" />
+        <p className="text-sm mb-2">{description}</p>
+      </div>
+
+      <div>
+        <hr className="mb-1 border-white" />
+        <div className="flex flex-row justify-between text-sm text-blue-400">
+          <a href={githubLink} target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href={websiteLink} target="_blank" rel="noopener noreferrer">Live Website ↗</a>
+        </div>
       </div>
     </div>
   );
