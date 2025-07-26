@@ -1,5 +1,5 @@
 import React from 'react';
-import twitter1 from '../icons/twitter1.jpeg';
+import twitter99 from '../icons/twitter99.jpeg';
 import styled from 'styled-components';
 
 const Bio = () => {
@@ -22,7 +22,7 @@ const Bio = () => {
           </div>
           <div className="flip-card-back">
           <div className="profile-image">
-              <img src={twitter1} alt="Profile" className='pfp'/>
+              <img src={twitter99} alt="Profile" className='pfp'/>
           </div>
           </div>
         </div>
