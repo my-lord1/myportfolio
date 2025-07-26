@@ -28,7 +28,7 @@ export function GithubCalendar() {
     <div className="text-white p-2">
       <h3 className="text-white font-semibold text-lg mb-1">GitHub Contributions</h3>
       
-      <div className="inline-block scale-[1] origin-top-left">
+      <div className="inline-block scale-[0.85] md:scale-[1] origin-top-left">
         {showCalendar ? (
           <GitHubCalendar
             username="my-lord1"

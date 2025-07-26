@@ -39,7 +39,7 @@ const StyledWrapper = styled.div`
     height: 200px;
     perspective: 1000px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    opacity: 0.9; 
+    opacity: 1; 
   }
 
   .flip-card-inner {

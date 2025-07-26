@@ -8,7 +8,7 @@ export function FavoriteSong() {
       rel="noopener noreferrer"
       className="group block p-6 rounded-2xl shadow-md bg-[#0D0D0D] transition hover:scale-[1.02]"
     >
-      <div className="w-[395px] h-[75px]">
+      <div className="md:w-[395px] md:h-[75px]">
         <div className="text-right text-xs tracking-wider font-bold text-white mb-2">
           RECENT FAVORITE SONG
         </div>

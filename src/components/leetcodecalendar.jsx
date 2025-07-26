@@ -11,7 +11,7 @@ export function LeetCodeCard() {
         <img
           src="https://leetcard.jacoblin.cool/MonolithicNexus?ext=heatmap&theme=dark"
           alt="LeetCode Stats for MonolithicNexus"
-          className="w-full max-w-full h-auto rounded-2xl border-1 border-white shadow-md mb-4"
+          className="md:w-full md:max-w-full md:h-auto w-[367px] rounded-2xl border-2 border-white shadow-md md:mb-4 mb-2"
         />
 
         </a>

@@ -31,7 +31,7 @@ export function SideComponent2() {
   }, []);
 
   return (
-    <div className="w-[350px] h-[472px] bg-[#0D0D0D] rounded-3xl p-4 flex flex-col shadow-lg transition-all duration-300">
+    <div className="w-[380px] md:w-[350px] h-[472px] bg-[#0D0D0D] rounded-3xl p-4 flex flex-col shadow-lg transition-all duration-300">
       <div className="text-white font-extrabold text-center text-7xl mb-4">
         Skills
       </div>

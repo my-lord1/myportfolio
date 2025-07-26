@@ -10,7 +10,7 @@ export function SideComponent1() {
   };
 
   return (
-    <div className="relative w-[350px] h-[472px] bg-[#0D0D0D] rounded-[30px] overflow-hidden shadow-xl transition-transform duration-300 hover:scale-[1.02] flex items-center justify-center">
+    <div className="relative w-[380px] md:w-[350px] md:h-[472px] bg-[#0D0D0D] rounded-[30px] overflow-hidden shadow-xl transition-transform duration-300 hover:scale-[1.02] flex items-center justify-center">
       <div className="mt-2 text-white text-left p-4 text-lg font-semibold w-full h-full">
         <div>
           <p>
