@@ -1,6 +1,6 @@
 import Socials from '../components/socials';
 import Bio from '../components/bio';
-import { TopComponent } from '../components/topComponent';
+import { TopComponent } from '../components/topcomponent';
 import { TestingComponent } from '../components/testingcomponent';
 import { SideComponent1 } from '../components/sidecomponent1';
 import { SideComponent2 } from '../components/sidecomponent2';
